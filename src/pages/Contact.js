@@ -6,6 +6,7 @@ import Navigation from "../components/Navigation";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Buttons from "../components/Buttons";
 import { motion } from "framer-motion";
+import GitHub from "../components/GitHub";
 
 const Contact = () => {
     const pageTransition = {
@@ -30,6 +31,7 @@ const Contact = () => {
                 transition={{ duration: 0.4 }}
             >
                 <Navigation />
+                <GitHub />
                 <Logo />
                 <ContactForm />
                 <div className="contact-infos">

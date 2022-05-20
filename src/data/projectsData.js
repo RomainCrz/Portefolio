@@ -1,42 +1,38 @@
 export const projectsData = [
-  {
-    id: 1,
-    title: "Casta",
-    date: "Janvier 2020",
-    languages: ["React", "Php", "Sass"],
-    infos:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    img: "./assets/img/projet-2.jpg",
-    link: "http://www.google.com",
-  },
-  {
-    id: 2,
-    title: "Lyon Béton",
-    date: "Mars 2020",
-    languages: ["Symfony", "Vue"],
-    infos:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    img: "./assets/img/projet-1.jpg",
-    link: "http://www.google.com",
-  },
-  {
-    id: 3,
-    title: "Everpost",
-    date: "Avril 2020",
-    languages: ["Wordpress", "Php", "React"],
-    infos:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    img: "./assets/img/projet-3.jpg",
-    link: "http://www.google.com",
-  },
-  {
-    id: 4,
-    title: "Creative Dev",
-    date: "Juillet 2020",
-    languages: ["Vue", "Php"],
-    infos:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    img: "./assets/img/projet-4.jpg",
-    link: "http://www.google.com",
-  },
+    {
+        id: 1,
+        title: "Projet Montagne",
+        date: "Mars 2022",
+        languages: ["Html", "Sass"],
+        infos: "Première intégration en Sass",
+        img: "./assets/img/projet-1.jpg",
+        link: "https://romaincrz.github.io/La-montagne/",
+    },
+    {
+        id: 2,
+        title: "Resto",
+        date: "Mars 2022",
+        languages: ["Html", "Sass"],
+        infos: "Deuxième intégration en Sass, plus poussée que la première au niveau des différents placements",
+        img: "./assets/img/projet-2.jpg",
+        link: "https://romaincrz.github.io/Resto/",
+    },
+    {
+        id: 3,
+        title: "Home made Snake",
+        date: "Avril 2022",
+        languages: ["Html", "CSS", "JavaScript"],
+        infos: "Snake fait maison, ce projet m'a permis d'approfondir mes connaissances en JavaScript, mais également de découvrir les canvas, balise que je ne connaissais que très peu jusqu'à ce projet. Cliquez sur le bouton si vous pensez pouvoir gagner ;)",
+        img: "./assets/img/projet-3.jpg",
+        link: "https://romaincrz.github.io/Snake/",
+    },
+    {
+        id: 4,
+        title: "React Country",
+        date: "Mai 2022",
+        languages: ["Html", "Sass", "React"],
+        infos: "Premier projet en React, traitement de données à travers une API + essai d'utilisation de JSON server pour la partie blog (ne fonctionne donc que localement)",
+        img: "./assets/img/projet-4.jpg",
+        link: "https://react-country-romain.netlify.app/",
+    },
 ];

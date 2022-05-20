@@ -6,7 +6,7 @@
     display: flex;
     width: 300px;
     text-align: left;
-    animation: color 30s alternate infinite;
+    animation: color 10s alternate infinite;
     perspective: 200px;
     transform: translateX(26px);
   }
@@ -15,13 +15,13 @@
   }
   @keyframes color {
     0% {
-      color: blue;
+      color: rgb(95, 159, 255);
     }
     50% {
-      color: #ec006e;
+      color: #00ec76;
     }
     100% {
-      color: blue;
+      color: rgb(255, 217, 0);
     }
   }
   .letter {
