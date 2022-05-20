@@ -4,8 +4,20 @@
   top: 8px;
   right: 90px;
   font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  i:hover{
-    color: black;
+  p{
+    font-size: 1rem;
+  }
+  
+  i{
+    margin-left: 5px;
+    font-size: 2rem;
+    &:hover{
+      color: black;
+      
+    }
   }
 }
