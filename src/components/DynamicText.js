@@ -11,33 +11,33 @@ const DynamicText = () => {
             const letter = document.createElement("span");
             target.appendChild(letter);
 
-            letter.classList.add("letter");
-            letter.style.opacity = "0";
-            letter.style.animation = "anim 6s ease forwards";
             letter.textContent = array[wordIndex][letterIndex];
+            // letter.classList.add("letter");
+            // letter.style.opacity = "0";
 
             setTimeout(() => {
                 letter.remove();
-            }, 2500);
+            }, 2700);
         }
 
         function loop() {
-            console.log(wordIndex);
             setTimeout(() => {
+                if (wordIndex >= array.length) {
+                    wordIndex = 0;
+                    letterIndex = 0;
+                }
                 if (letterIndex < array[wordIndex].length) {
                     createLetter();
                     letterIndex++;
                     loop();
-                } else if (wordIndex === array.length - 1) {
-                    wordIndex = 0;
-                    letterIndex = 0;
-                    setTimeout(loop, 2000);
                 } else {
-                    letterIndex = 0;
                     wordIndex++;
-                    setTimeout(loop, 2000);
+                    letterIndex = 0;
+                    setTimeout(() => {
+                        loop();
+                    }, 2800);
                 }
-            }, 80);
+            }, 50);
         }
         loop();
     }, []);

@@ -3,12 +3,23 @@
   display: flex;
 
   #text-target {
+    position: relative;
     display: flex;
-    width: 300px;
     text-align: left;
     animation: color 10s alternate infinite;
     perspective: 200px;
     transform: translateX(26px);
+    &::after {
+      content: "";
+      position: absolute;
+      height: 4rem;
+      width: 5px;
+      background: black;
+      top: 7px;
+      transform: translateY(-4px);
+      right: -15px;
+      animation: anim 0.8s linear infinite;
+    }
   }
   .word {
     position: absolute;
@@ -28,13 +39,12 @@
     transform: translateZ(200px);
   }
   @keyframes anim {
-    25% {
-      transform: translateZ(0px);
-      opacity: 1;
+    50% {
+      opacity: 0.1;
     }
-    32% {
-      opacity: 0;
-      transform: translateZ(-280px) translateX(200px);
+    100% {
+      opacity: 1;
     }
   }
 }
+
