@@ -9,8 +9,13 @@
   transition: 500ms ease-out;
   z-index: 2;
   backdrop-filter: brightness(115%);
+  @media screen and (max-width: 400px ) {
+    visibility: hidden;
+  }
 }
 .cursor.hovered {
   width: 30px;
   height: 30px;
 }
+
+
