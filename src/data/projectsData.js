@@ -28,11 +28,11 @@ export const projectsData = [
     },
     {
         id: 4,
-        title: "React Country",
+        title: "Crypto Tower",
         date: "Mai 2022",
-        languages: ["Html", "Sass", "React"],
-        infos: "Premier projet en React, traitement de données à travers une API + essai d'utilisation de JSON server pour la partie blog (ne fonctionne donc que localement)",
+        languages: ["Html", "Sass", "React", "Redux"],
+        infos: "Premier gros projet en React avec utilisation d'une API pour recevoir les différentes données. Introduction à Redux également sur ce projet. Utilisation de la bibliothèque Recharts pour les graphiques.",
         img: "./assets/img/projet-4.jpg",
-        link: "https://react-country-romain.netlify.app/",
+        link: "https://crypto-tower.netlify.app/",
     },
 ];
